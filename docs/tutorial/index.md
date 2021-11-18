@@ -9,11 +9,9 @@ next_page: app.md
 恭喜你！你已经成功启动了容器。
 
 <!-- Let's first explain the command that you just ran. In case you forgot, -->
-让我们先解释一下你刚刚运行的命令。万一你忘了，
+让我们先解释一下你刚刚运行的命令：
 
 <!-- here's the command: -->
-以下是命令：
-
 
 ```cli
 docker run -d -p 80:80 docker/getting-started
@@ -49,7 +47,7 @@ docker run -d -p 80:80 docker/getting-started
 you a quick view of the containers running on your machine. It gives you quick
 access to container logs, lets you get a shell inside the container, and lets you
 easily manage container lifecycle (stop, remove, etc.).  -->
-在深入介绍之前，我们想突出介绍一下Docker仪表板，它提供了让我们快速查看机器上运行容器的功能。并且它让你能很方便的查看容器日志，允许您直接通过shell进入容器，并允许您轻松管理容器生命周期（停止、移除等）。
+在深入介绍之前，我们想先介绍一下Docker仪表板，它提供了让我们快速查看机器上运行容器的功能。并且它让你能很方便的查看容器日志，允许您直接通过shell进入容器，并允许您轻松管理容器生命周期（停止、移除等）。
 
 <!-- To access the dashboard, follow the instructions for either 
 [Mac](https://docs.docker.com/docker-for-mac/dashboard/) or 
@@ -57,8 +55,8 @@ easily manage container lifecycle (stop, remove, etc.).  -->
 now, you will see this tutorial running! The container name (`jolly_bouman` below) is a
 randomly created name. So, you'll most likely have a different name. -->
 
-要访问仪表板，请根据你的平台进行设置：
-- [Mac](https://docs.docker.com/docker-for-mac/dashboard/)
+要访问仪表板，请根据你的平台进行设置：  
+- [Mac](https://docs.docker.com/docker-for-mac/dashboard/)  
 - [Windows](https://docs.docker.com/docker-for-windows/dashboard/)
 
 如果你打开仪表板，您将看到本教程正在运行！容器名称（下面的`jolly_bouman`）是一个随机创建名称。所以，你很可能有不同的名字。
@@ -76,7 +74,7 @@ in Linux for a long time. Docker has worked to make these capabilities approacha
 
 现在你已经运行了一个容器，那么什么是容器呢？
 
-简而言之，容器只是一个进程，一个与您主机上所有其他进程隔离的进程。
+简而言之，容器就是一个进程，一个与您主机上所有其他进程隔离的特殊进程。
 
 这种隔离技术利用了[内核命名空间和cgroups](https://medium.com/@saschagrunert/demystifying-containers-part-i-kernel-space-2c53d6979504)实现。这并不是新技术，在Docker之前，他们已经在Linux中呆了很长时间。Docker一直致力于使这些功能易于理解和使用。
 
@@ -90,7 +88,7 @@ in Linux for a long time. Docker has worked to make these capabilities approacha
 
 !!! info 从零开始创建容器
     如果您想了解容器是如何从零开始建造的，来自Aqua Security的Liz Rice
-    有一个精彩的演讲，她使用Go来从头开始创建容器。这个简单的容器足够简单，以至于它不会涉及网络、文件系统等等。但是，它对你理解容器是如何工作的有十分惊人的帮助。
+    有一个精彩的演讲，她使用Go来从头开始创建容器。这个容器足够简单，以至于它不会涉及网络、文件系统等等。但是，它对你理解容器是如何工作的有十分惊人的帮助的。
 
     PS：译者注，原文是Youtube链接，我转换成了B站链接分享给大家。
     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8fi7uSYlOdc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -122,6 +120,6 @@ a default command to run, and other metadata. -->
 
 ## 译者
 
-github：https://github.com/xmcy0011
-公众号：Go和分布式IM
-最后更新日期：2021-11-18
+- github：https://github.com/xmcy0011
+- 公众号：Go和分布式IM
+- 最后更新日期：2021-11-18

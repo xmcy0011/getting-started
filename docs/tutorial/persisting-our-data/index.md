@@ -32,7 +32,7 @@ What you'll see is that the files created in one container aren't available in a
     <!-- In case you're curious about the command, we're starting a bash shell and invoking two
     commands (why we have the `&&`). The first portion picks a single random number and writes
     it to `/data.txt`. The second command is simply watching a file to keep the container running. -->
-    在命令中，我们将启动一个 `bash shell` 并调用两个命令（这就是为什么时候`&&`）。第一部分选择一个随机数字并把它写到 `/data.txt`文件中。第二个命令只是为了保持容器一直处于运行状态（否则执行完毕后，立马就会停止）。
+    让我们来解释一下这些命令。我们将启动一个 `bash shell` 并调用两个命令（这就是为什么时候`&&`）。第一部分选择一个随机数字并把它写到 `/data.txt`文件中。第二部分只是为了保持容器一直处于运行状态（否则执行完毕后，立马就会停止）。
 
 2. 我们可以通过命令 `exec` 进入到容器中来查看输出。为此，请打开仪表板，然后单击ubuntu镜像容器的第一个按钮。
 
@@ -100,7 +100,7 @@ writes to the `todo.db` file, it will be persisted to the host in the volume. --
 <!-- As mentioned, we are going to use a **named volume**. Think of a named volume as simply a bucket of data. 
 Docker maintains the physical location on the disk and you only need to remember the name of the volume. 
 Every time you use the volume, Docker will make sure the correct data is provided. -->
-如前所述，我们将使用 `命名卷`。将命名卷简单地视为一个数据桶（PS：或者一个`数据容器`）。Docker维护磁盘上的物理位置，您只需要记住卷的名称。每次您使用卷时，Docker都会确保提供正确的数据。
+如前所述，我们将使用 `命名卷`。命名卷可以简单地视为一个数据桶（PS：或者一个`数据容器`）。Docker维护磁盘上的物理位置，您只需要记住卷的名称。每次您使用卷时，Docker都会确保提供正确的数据。
 
 1. 使用 `docker volume create` 命令创建 `卷`。
 
@@ -110,7 +110,7 @@ Every time you use the volume, Docker will make sure the correct data is provide
 
 2. 在仪表板中再次停止todo应用程序容器（或使用 `docker rm -f <id>` ），因为它仍在运行，就无法使用数据卷。
 
-3. 启动todo应用程序容器，但添加-v标志以指定挂载卷。我们将使用命名卷并挂载它到 `/etc/todos` ，它将捕获在该路径上创建的所有文件。
+3. 启动todo应用程序容器，但添加 `-v` 标志以指定挂载卷。我们将使用命名卷并挂载它到 `/etc/todos` ，它将捕获在该路径上创建的所有文件。
     ```bash
     docker run -dp 3000:3000 -v todo-db:/etc/todos getting-started
     ```
@@ -177,4 +177,4 @@ hope they can catch our vision! -->
 
 <!-- However, we saw earlier that rebuilding images for every change takes quite a bit of time. There's got to be a better
 way to make changes, right? With bind mounts (which we hinted at earlier), there is a better way! Let's take a look at that now! -->
-然而，在早些时候，我们发现每个变化重建镜像都需要相当长的时间。一定有更好的方法，对吗？那就是使用绑定挂载时（我们之前暗示过），接下来，让我们一起看看什么是绑定挂载，以及如何使用。
+然而，在早些时候，我们发现每个变化重建镜像都需要相当长的时间。一定有更好的方法，对吗？那就是使用绑定挂载（我们之前暗示过），接下来，让我们一起看看什么是绑定挂载，以及如何使用。

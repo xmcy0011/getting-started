@@ -69,13 +69,13 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Getting Started: tutorial/index.md
-  - Our Application: tutorial/our-application/index.md
-  - Updating our App: tutorial/updating-our-app/index.md
-  - Sharing our App: tutorial/sharing-our-app/index.md
-  - Persisting our DB: tutorial/persisting-our-data/index.md
-  - Using Bind Mounts: tutorial/using-bind-mounts/index.md
-  - Multi-Container Apps: tutorial/multi-container-apps/index.md
-  - Using Docker Compose: tutorial/using-docker-compose/index.md
-  - Image Building Best Practices: tutorial/image-building-best-practices/index.md
-  - What Next?: tutorial/what-next/index.md
+  - 开始: tutorial/index.md
+  - 示例程序: tutorial/our-application/index.md
+  - 更新镜像: tutorial/updating-our-app/index.md
+  - 上传镜像: tutorial/sharing-our-app/index.md
+  - 持久化DB: tutorial/persisting-our-data/index.md
+  - 绑定挂载: tutorial/using-bind-mounts/index.md
+  - 多容器应用: tutorial/multi-container-apps/index.md
+  - 使用Docker Compose: tutorial/using-docker-compose/index.md
+  - 构建镜像最佳实践: tutorial/image-building-best-practices/index.md
+  - 接下来?: tutorial/what-next/index.md

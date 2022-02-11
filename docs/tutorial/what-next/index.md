@@ -21,7 +21,7 @@ machines in the cluster and delegate work to "worker" nodes. The managers watch 
 a container quitting) and then work to make **actual state** reflect the expected state. -->
 容器编排通常的工作思路是：你指定一个**预期状态**给"managers"。比如“我想运行两个web应用实例，并公开80端口”。然后"managers"会查看所有的集群中的机器，并将工作委托给“worker”节点。"managers"关注变化（比如容器退出），然后使**实际状态**反映预期状态。
 
-译者注：docker compose是单机容器编排工具，Kubernetes(k8s)是集群容器编排工具。
+> 译者注：docker compose是单机容器编排工具，Kubernetes(k8s)是集群容器编排工具。
 
 <!-- ## Cloud Native Computing Foundation Projects -->
 ## 云计算基础基金项目（Cloud Native Computing Foundation Projects）

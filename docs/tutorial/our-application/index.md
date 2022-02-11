@@ -92,10 +92,9 @@ command (remember that from earlier?). -->
     ```bash
     docker run -dp 3000:3000 getting-started
     ```
-
     还记得 `-d` 和 `-p` 标志吗？我们正在以“分离”模式运行新容器，并在主机的端口3000与容器的端口3000之间创建映射。没有端口映射，我们将无法访问应用程序。
 
-2. 几秒钟后，打开网页浏览器[http://localhost:3000](http://localhost:3000)。您应该会看到我们的应用程序！
+1. 等待几秒钟后，打开网页浏览器 [http://localhost:3000](http://localhost:3000)，您应该会看到我们的应用程序！
     ![Empty Todo List](todo-list-empty.png){: style="width:450px;margin-top:20px;"}
     {: .text-center }
 

@@ -59,6 +59,10 @@ command, you can see the command that was used to create each layer within an im
 
 <!-- 1. Use the `docker image history` command to see the layers in the `getting-started` image you
    created earlier in the tutorial. -->
+
+<!-- 1. You'll notice that several of the lines are truncated. If you add the `--no-trunc` flag, you'll get the
+   full output (yes... funny how you use a truncated flag to get untruncated output, huh?) -->
+
 1. 使用 `docker image history` 命令查看您在教程早期创建的`getting-started`镜像：
     ```bash
     docker image history getting-started
@@ -89,8 +93,6 @@ command, you can see the command that was used to create each layer within an im
     diagnose large images. -->
     每一行代表镜像的一个层，底部是基础层，最新的层在顶部。使用此功能，您还可以快速查看每层的大小，以诊断大型镜像，帮助其瘦身。
 
-<!-- 1. You'll notice that several of the lines are truncated. If you add the `--no-trunc` flag, you'll get the
-   full output (yes... funny how you use a truncated flag to get untruncated output, huh?) -->
 1. 您会注意到有几行被截断了。如果添加 `--no trunc` 标志，您将获得完整输出（有趣的是，您如何使用 trunc 标志来获得不受信任的输出？）
     ```bash
     docker image history --no-trunc getting-started
@@ -130,6 +132,15 @@ a change to the `package.json`. Make sense? -->
 applications）应用程序而言，这些依赖项定义在 `package.json` 文件中。那么，如果我们先只复制那个文件，安装依赖项，然后再复制其他内容呢？然后，我们仅需要在`package.json`改变时，再重新创建依赖项，有道理吗？
 
 <!-- 1. Update the Dockerfile to copy in the `package.json` first, install dependencies, and then copy everything else in. -->
+
+<!-- 1. Create a file named `.dockerignore` in the same folder as the Dockerfile with the following contents. -->
+
+<!-- 1. Build a new image using `docker build`. -->
+
+<!-- 1. Now, make a change to the `src/static/index.html` file (like change the `<title>` to say "The Awesome Todo App"). -->
+
+<!-- 1. Build the Docker image now using `docker build -t getting-started .` again. This time, your output should look a little different. -->
+
 1. 更新Dockerfile，首先拷贝 `package.json` , 然后安装依赖, 最后拷贝其他的一切：
     ```dockerfile hl_lines="3 4 5"
     FROM node:12-alpine
@@ -143,7 +154,6 @@ applications）应用程序而言，这些依赖项定义在 `package.json` 文�
     CMD ["node", "src/index.js"]
     ```
 
-<!-- 1. Create a file named `.dockerignore` in the same folder as the Dockerfile with the following contents. -->
 1. 在和Dockerfile同目录下创建 `.dockerignore` 文件，写入以下内容：
 
     ```ignore
@@ -160,7 +170,6 @@ applications）应用程序而言，这些依赖项定义在 `package.json` 文�
     [Dockerizing a Node.js web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/). -->
     `.dockerignore`文件是一种选择性复制镜像相关文件的简单方法。您可以阅读更多关于这方面的内容 [这里](https://docs.docker.com/engine/reference/builder/#dockerignore-file)。这样的话，在第二个`copy`命令中不会拷贝 `node_modules` 文件夹，否则，它可能会覆盖 `RUN` 命令创建的文件。有关为什么建议对node.js使用此选项的更多详细信息，请看看他们的指南 [Dockerizing a Node.js web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)。
 
-<!-- 1. Build a new image using `docker build`. -->
 1. 使用`docker Build`创建新映像：
 
     ```bash
@@ -204,10 +213,8 @@ applications）应用程序而言，这些依赖项定义在 `package.json` 文�
     <!-- You'll see that all layers were rebuilt. Perfectly fine since we changed the Dockerfile quite a bit. -->
     您将看到所有层都已重建，非常好，因为我们对Dockerfile做了很多修改。
 
-<!-- 1. Now, make a change to the `src/static/index.html` file (like change the `<title>` to say "The Awesome Todo App"). -->
 1. 现在，对 `src/static/index.html` 进行更改（比如将`<title>`改为 `很棒的Todo应用`）。
 
-<!-- 1. Build the Docker image now using `docker build -t getting-started .` again. This time, your output should look a little different. -->
 1. 现在使用 `docker build -t getting started` 再创建Docker镜像一次，这次，您的输出看起来应该有点不同。
 
     ```plaintext hl_lines="5 8 11"
@@ -308,5 +315,6 @@ Scanning images gives us confidence that the containers we are running and distr
 Multi-stage builds also help us reduce overall image size and increase final container security by separating
 build-time dependencies from runtime dependencies. -->
 通过认识理解镜像的结构，我们可以更快地构建镜像，并进行更少的更改。  
+
 - 扫描镜像让我们确信我们正在运行和分发的容器是安全的。
 - 多阶段构建通过分离运行时依赖和编译时依赖，来帮助我们减少整体镜像大小，同时也提高了最终容器的安全性。

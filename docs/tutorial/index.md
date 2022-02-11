@@ -7,6 +7,7 @@ next_page: app.md
 欢迎！我们很高兴你想学习 Docker。
 
 此页面包含有关如何开始使用 Docker 的分步说明。在本教程中，您将学习如何：  
+
 - 构建并运行镜像作为容器  
 - 使用 Docker Hub 共享图像  
 - 使用带有数据库的多个容器部署 Docker 应用程序  
@@ -78,7 +79,8 @@ easily manage container lifecycle (stop, remove, etc.).  -->
 now, you will see this tutorial running! The container name (`jolly_bouman` below) is a
 randomly created name. So, you'll most likely have a different name. -->
 
-要访问仪表板，请根据你的平台进行设置：  
+要访问仪表板，请根据你的平台进行设置：
+
 - [Mac](https://docs.docker.com/docker-for-mac/dashboard/)  
 - [Windows](https://docs.docker.com/docker-for-windows/dashboard/)
 

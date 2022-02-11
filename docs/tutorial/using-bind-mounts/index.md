@@ -10,20 +10,20 @@ mount our source code into the container to let it see code changes, respond, an
 away. -->
 
 除此之外，我们还可以使用 `绑定挂载（bind mounts）` 来存储数据，和命名卷（PS：译者更喜欢称其为数据卷或者数据卷容器）不同的是：
+
 - 您可以控制主机上的确切挂载点，将容器的数据存储在宿主机何处将由您来决定。
 - 用它来向容器提供额外的数据。比如我们可以使用绑定挂载来将我们的源代码装载到容器中，让它看到代码更改（这一特性对于前端应用特别有帮助）或者加载宿主机的配置文件等等。
 
 <!-- For Node-based applications, [nodemon](https://npmjs.com/package/nodemon) is a great tool to watch for file
 changes and then restart the application. There are equivalent tools in most other languages and frameworks. -->
-对于基于NodeJs的应用程序来说，`nodemon` 是监视文件的绝佳工具，一旦其发现文件改动，就会自动重新启动应用程序。大多数其他语言和框架都有同等的工具。
+对于基于Node.js的应用程序来说，`nodemon` 是监视文件的绝佳工具，一旦其发现文件改动，就会自动重新启动应用程序。大多数其他语言和框架都有同等的工具。
 
 <!-- ## Quick Volume Type Comparisons -->
-## 快速比较2中卷类型
+## 快速比较2种卷类型
 
 <!-- Bind mounts and named volumes are the two main types of volumes that come with the Docker engine. However, additional
 volume drivers are available to support other use cases ([SFTP](https://github.com/vieux/docker-volume-sshfs), [Ceph](https://ceph.com/geen-categorie/getting-started-with-the-docker-rbd-volume-plugin/), [NetApp](https://netappdvp.readthedocs.io/en/stable/), [S3](https://github.com/elementar/docker-s3-volume), and more). -->
-绑定挂载和命名卷是Docker引擎默认的两种主要卷类型。然而，额外的
-卷驱动程序可用于支持其他用例（[SFTP](https://github.com/vieux/docker-volume-sshfs)、[Ceph](https://ceph.com/geen-categorie/getting-started-with-the-docker-rbd-volume-plugin/)、[NetApp](https://netappdvp.readthedocs.io/en/stable/)、[S3](https://github.com/elementar/docker-s3-volume), and more)等）。
+绑定挂载和命名卷是Docker引擎默认的两种主要卷类型。然而，额外的卷驱动程序可用于支持其他用例（[SFTP](https://github.com/vieux/docker-volume-sshfs)、[Ceph](https://ceph.com/geen-categorie/getting-started-with-the-docker-rbd-volume-plugin/)、[NetApp](https://netappdvp.readthedocs.io/en/stable/)、[S3](https://github.com/elementar/docker-s3-volume), and more)等）。
 
 <!-- |   | Named Volumes | Bind Mounts |
 | - | ------------- | ----------- |

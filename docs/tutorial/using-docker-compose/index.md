@@ -205,11 +205,6 @@ docker run -d `
       mysql:
         image: mysql:5.7
     ```
-
-<!-- 1. Next, we'll define the volume mapping. When we ran the container with `docker run`, the named volume was created
-   automatically. However, that doesn't happen when running with Compose. We need to define the volume in the top-level
-   `volumes:` section and then specify the mountpoint in the service config. By simply providing only the volume name,
-   the default options are used. There are [many more options available](https://docs.docker.com/compose/compose-file/#volume-configuration-reference) though. -->
 1. 接下来，让我们定义卷容器和映射。当我们通过 `docker run` 启动容器时，命名卷容器（named volume）会被自动创建。然而，在docker compose中需要手动显示创建。我们需要创建一个和 `services` 同级的 `volumes` 节点，来指定如何挂载。我们可以仅指定卷名称，来使用默认的配置。
 
     ```yaml hl_lines="8 9 10 11 12"
@@ -281,7 +276,8 @@ volumes:
   todo-mysql-data:
 ```
 
-PS：
+译者注：
+
 - services：声明了一组服务，它由容器app和mysql构成。服务启动时，会把这2个容器启动。启动后，在docker desktop中，会看到这2个容器放在了一个服务下面。
 - volumes 和 services 一定是同级的，别搞错了。
 - image 声明了启动容器所需的镜像，某些情况下，我们希望从源码编译，可以这样写：
@@ -302,9 +298,18 @@ services:
 现在，有了 `docker-compose.yml` 文件后，我们就可以启动它了！
 
 <!-- 1. Make sure no other copies of the app/db are running first (`docker ps` and `docker rm -f <ids>`). -->
-1. 确认没有其他名为 `app, mysql`的容器在运行(使用`docker ps` and `docker rm -f <ids>`)。
 
 <!-- 1. Start up the application stack using the `docker-compose up` command. We'll add the `-d` flag to run everything in the background. -->
+
+<!-- 1. Let's look at the logs using the `docker-compose logs -f` command. You'll see the logs from each of the services interleaved
+    into a single stream. This is incredibly useful when you want to watch for timing-related issues. The `-f` flag "follows" the
+    log, so will give you live output as it's generated. -->
+
+<!-- 1. At this point, you should be able to open your app and see it running. 
+And hey! We're down to a single command! -->
+
+1. 确认没有其他名为 `app, mysql`的容器在运行(使用`docker ps` and `docker rm -f <ids>`)。
+
 1. 然后通过 `docker-compose up`命令来启动所有应用程序（容器 或者说 一组容器），`-d` 标志代表让所有容器都在后台运行。
 
     ```bash
@@ -324,9 +329,6 @@ services:
     network specifically for the application stack (which is why we didn't define one in the compose file). -->
     您会注意到，第一行和第二行自动创建了卷容器和网络！默认情况下，Docker Compose会自动创建专门针对应用程序堆栈的网络（这就是为什么我们没有在compose文件中再定义网络的原因）。
 
-<!-- 1. Let's look at the logs using the `docker-compose logs -f` command. You'll see the logs from each of the services interleaved
-    into a single stream. This is incredibly useful when you want to watch for timing-related issues. The `-f` flag "follows" the
-    log, so will give you live output as it's generated. -->
 1. 让我们通过 `docker-compose logs -f` 命令来查看一下日志，您会看到不同容器的日志一起输出了，当您想要关注与时间相关的问题时，这非常有用。 `-f` 标志指示日志实时输出。
 
     如果出了点意外，您可能会看到如下的输出：
@@ -350,8 +352,6 @@ services:
         [wait-port](https://github.com/dwmkerr/wait-port) dependency. Similar projects exist for other languages/frameworks. -->
         在实际项目中，我们希望应用程序等待MySQL先启动就绪后，再去尝试连接它。但是，Docker没有任何内置的支持来等待实现这一点。对于基于节点（Node-based）的项目，可以使用 [wait-port](https://github.com/dwmkerr/wait-port) ，其他语言/框架也有类似的项目。
 
-<!-- 1. At this point, you should be able to open your app and see it running. 
-And hey! We're down to a single command! -->
 1. 此时，您应该能够打开应用程序并看到它正在运行。`嘿！我们只有一个命令！`
 
 <!-- ## Seeing our App Stack in Docker Dashboard -->
@@ -382,7 +382,7 @@ for the entire app. The containers will stop and the network will be removed. --
 
 当您准备把它全部拆掉时（译者注：停止容器组内所有容器，并且移除），只需运`docker compose down`或点击Docker Dashboard `app` 对应的垃圾桶。即可停止并删除所有容器，同时容器网络也将被移除。
 
-!!! warning 移除容器卷（Volumes）
+!!! warning "移除容器卷（Volumes）"
     <!-- By default, named volumes in your compose file are NOT removed when running `docker-compose down`. If you want to
     remove the volumes, you will need to add the `--volumes` flag. -->
     默认情况下, 当您运行`docker-compose down`时，命名容器卷（named volumes）通常不会被移除，除非您指定`--volumes`标志。

@@ -64,7 +64,7 @@ What you'll see is that the files created in one container aren't available in a
 4. 继续使用 `docker rm -f` 命令删除第一个容器。
 
 <!-- ## Container Volumes -->
-## 容器卷
+## 容器卷（Container Volumes）
 
 <!-- With the previous experiment, we saw that each container starts from the image definition each time it starts. 
 While containers can create, update, and delete files, those changes are lost when the container is removed 
@@ -77,10 +77,12 @@ and all changes are isolated to that container. With volumes, we can change all 
 the container back to the host machine. If a directory in the container is mounted, changes in that
 directory are also seen on the host machine. If we mount that same directory across container restarts, we'd see
 the same files. -->
-卷（[Volumes](https://docs.docker.com/storage/volumes/) ），为容器提供了连接宿主机特定文件系统路径的能力。如果容器已装载宿主机的目录，则在容器中的对该目录的更改，在宿主机上也能看到。如果我们重新启动一个容器，装载同一目录，我们将看到相同的文件。
+[卷](https://docs.docker.com/storage/volumes/) 为容器提供了连接宿主机特定文件系统路径的能力。如果容器已装载宿主机的目录，则在容器中的对该目录的更改，在宿主机上也能看到。如果我们重新启动一个容器，装载同一目录，我们将看到相同的文件。
 
 <!-- There are two main types of volumes. We will eventually use both, but we will start with **named volumes**. -->
 卷主要有两种类型。我们最终将同时使用这两个，但我们将从命名卷（`named volumes`）开始。
+
+> 译者注：另外一种就是绑定挂载，也就是下一节的内容。
 
 <!-- ## Persisting our Todo Data -->
 ## 持久化我们Todo应用的数据

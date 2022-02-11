@@ -30,7 +30,7 @@
 or containers on the same machine. So, how do we allow one container to talk to another? The answer is
 **networking**. Now, you don't have to be a network engineer (hooray!). Simply remember this rule... -->
 
-默认情况下，容器是孤立运行的，对其他进程或同一机器上的其他容器一无所知。那么，我们如何让一个容器与另一个容器通信呢？答案是**网络**。现在，你不必成为一名网络工程师（万岁！）。只要记住这条规则：
+默认情况下，容器是孤立运行的，对其他进程或同一机器上的其他容器一无所知。那么，我们如何让一个容器与另一个容器通信呢？答案是`网络`。现在，你不必成为一名网络工程师（万岁！）。只要记住这条规则：
 
 > 如果两个容器位于同一网络上，它们就可以相互通信。反之，就不能。
 
@@ -181,6 +181,7 @@ which ships with a _lot_ of tools that are useful for troubleshooting or debuggi
 
 <!-- The todo app supports the setting of a few environment variables to specify MySQL connection settings. They are: -->
 todo应用程序支持设置一些环境变量来指定MySQL的设置：
+
 - `MYSQL_HOST`：处于运行状态MySQL Server的主机名
 - `MYSQL_USER`：连接MySQL的用户名
 - `MYSQL_PASSWORD`：连接MySQL的用户密码

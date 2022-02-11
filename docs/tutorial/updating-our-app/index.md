@@ -14,20 +14,15 @@ would like to transition it to the following: -->
 
 <!-- 1. In the `src/static/js/app.js` file, update line 56 to use the new empty text. -->
 1. 在 `src/static/js/app.js` 文件中，更新第56行以使用新的文本。
-
     ```diff
     - <p className="text-center">No items yet! Add one above!</p>
     + <p className="text-center">You have no todo items yet! Add one above!</p>
     ```
-
-<!-- 1. Let's build our updated version of the image, using the same command we used before. -->
-2. 让我们使用之前的命令构建新镜像。
-
+1. 让我们使用之前的命令构建新镜像。
     ```bash
     docker build -t getting-started .
     ```
-
-3. 然后，启动更改过代码的新的容器镜像。
+1. 然后，启动更改过代码的新的容器镜像。
 
     ```bash
     docker run -dp 3000:3000 getting-started
@@ -124,6 +119,7 @@ much easier than having to look up the container ID and remove it. -->
 ## 总结
 
 当我们编译镜像并且更新过后，我们观察到：
+
 - 我们待办事项列表中的所有项目都已消失！这不是一个很好的应用程序！我们将很快讨论这个问题。
 - 这么小的变化涉及到很多步骤。
 

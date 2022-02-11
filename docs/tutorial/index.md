@@ -2,16 +2,39 @@
 next_page: app.md
 ---
 
+## 入门
+
+欢迎！我们很高兴你想学习 Docker。
+
+此页面包含有关如何开始使用 Docker 的分步说明。在本教程中，您将学习如何：  
+- 构建并运行镜像作为容器  
+- 使用 Docker Hub 共享图像  
+- 使用带有数据库的多个容器部署 Docker 应用程序  
+- 使用 Docker Compose 运行应用程序  
+
+此外，您还将了解构建映像的最佳实践，包括有关如何扫描映像以查找安全漏洞的说明。
+
+如果您正在寻找有关如何使用您喜欢的语言容器化应用程序的信息，请参阅[特定于语言的入门指南](https://docs.docker.com/language/)。
+
+我们还推荐 [DockerCon 2020](https://www.youtube-nocookie.com/embed/iqqDU2crIEQ?start=30) 的视频演练。
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iqqDU2crIEQ?start=30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+## 下载并安装Docker
+
+请移步官网：[下载并安装 Docker](https://docs.docker.com/get-started/#download-and-install-docker)。
+
 <!-- ## The command you just ran -->
-## 你刚刚运行的命令
+<!-- ## 你刚刚运行的命令 -->
+## 启动Docker
 
-<!-- Congratulations! You have started the container for this tutorial! -->
-恭喜你！你已经成功启动了容器。
+安装完成后，别忘记启动Docker。Mac和Windows可以双击Docker启动，Linux下可以通过以下命令启动：
+```bash
+sudo systemctl start docker
+```
 
-<!-- Let's first explain the command that you just ran. In case you forgot, -->
-让我们先解释一下你刚刚运行的命令：
+## 开始教程
 
-<!-- here's the command: -->
+如果您已经运行命令开始学习本教程，恭喜！如果没有，请打开命令提示符或 bash 窗口，然后运行命令：
 
 ```cli
 docker run -d -p 80:80 docker/getting-started
@@ -88,7 +111,7 @@ in Linux for a long time. Docker has worked to make these capabilities approacha
 
 !!! info 从零开始创建容器
     如果您想了解容器是如何从零开始建造的，来自Aqua Security的Liz Rice
-    有一个精彩的演讲，她使用Go来从头开始创建容器。这个容器足够简单，以至于它不会涉及网络、文件系统等等。但是，它对你理解容器是如何工作的有十分惊人的帮助的。
+    有一个精彩的 [演讲](https://www.youtube-nocookie.com/embed/8fi7uSYlOdc) ，她使用Go来从头开始创建容器。这个容器足够简单，以至于它不会涉及网络、文件系统等等。但是，它对你理解容器是如何工作的有十分惊人的帮助的。
 
     PS：译者注，原文是Youtube链接，我转换成了B站链接分享给大家。
     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8fi7uSYlOdc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -122,4 +145,4 @@ a default command to run, and other metadata. -->
 
 - github：https://github.com/xmcy0011
 - 公众号：Go和分布式IM
-- 最后更新日期：2021-11-18
+- 最后更新日期：2022-02-11

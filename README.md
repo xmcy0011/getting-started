@@ -1,5 +1,9 @@
 # 官方Docker 入门教程中文翻译（Docker Getting Started Tutorial）
 
+## 介绍
+
+![preview](preview.jpg)
+
 <!-- This tutorial has been written with the intent of helping folks get up and running
 with containers and is designed to work with Docker Desktop. While not going too much 
 into depth, it covers the following topics: -->
@@ -50,7 +54,7 @@ docker run -d -p 80:80 xmcy0011/getting-started-cn
 
 当然，您可能只想看看的话，请访问本教程的在线网站吧：
 - 官方英文原版：[https://docs.docker.com/get-started/](https://docs.docker.com/get-started/)
-- xmcy0011中文翻译版：[]()
+- 中文翻译版：[https://xmcy0011.github.io/getting-started-cn/tutorial/](https://xmcy0011.github.io/getting-started-cn/tutorial/)
 
 <!-- ## Development -->
 ## 开发本教程

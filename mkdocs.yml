@@ -1,11 +1,11 @@
 site_name: Getting Started
 site_description: Getting Started with Docker
 site_author: Docker
-# site_url: https://squidfunk.github.io/mkdocs-material/
+site_url: https://github.com/xmcy0011/getting-started-cn
 
 # Repository
-repo_name: docker/getting-started
-repo_url: https://github.com/xmcy0011/getting-started
+repo_name: xmcy0011/getting-started-cn
+repo_url: https://github.com/xmcy0011/getting-started-cn
 edit_uri: ""
 
 # Copyright
@@ -38,7 +38,7 @@ plugins:
 extra:
   social:
     - type: github-alt
-      link: https://github.com/xmcy0011/getting-started
+      link: https://github.com/xmcy0011/getting-started-cn
 
 # Extensions
 markdown_extensions:

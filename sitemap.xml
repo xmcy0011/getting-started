@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://github.com/xmcy0011/getting-started-cn/</loc>
+         <loc>https://xmcy0011.github.io/getting-started-cn/</loc>
          <lastmod>2022-02-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/xmcy0011/getting-started-cn/tutorial/</loc>
+         <loc>https://xmcy0011.github.io/getting-started-cn/tutorial/</loc>
          <lastmod>2022-02-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/xmcy0011/getting-started-cn/tutorial/image-building-best-practices/</loc>
+         <loc>https://xmcy0011.github.io/getting-started-cn/tutorial/image-building-best-practices/</loc>
          <lastmod>2022-02-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/xmcy0011/getting-started-cn/tutorial/multi-container-apps/</loc>
+         <loc>https://xmcy0011.github.io/getting-started-cn/tutorial/multi-container-apps/</loc>
          <lastmod>2022-02-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/xmcy0011/getting-started-cn/tutorial/our-application/</loc>
+         <loc>https://xmcy0011.github.io/getting-started-cn/tutorial/our-application/</loc>
          <lastmod>2022-02-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/xmcy0011/getting-started-cn/tutorial/persisting-our-data/</loc>
+         <loc>https://xmcy0011.github.io/getting-started-cn/tutorial/persisting-our-data/</loc>
          <lastmod>2022-02-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/xmcy0011/getting-started-cn/tutorial/sharing-our-app/</loc>
+         <loc>https://xmcy0011.github.io/getting-started-cn/tutorial/sharing-our-app/</loc>
          <lastmod>2022-02-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/xmcy0011/getting-started-cn/tutorial/updating-our-app/</loc>
+         <loc>https://xmcy0011.github.io/getting-started-cn/tutorial/updating-our-app/</loc>
          <lastmod>2022-02-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/xmcy0011/getting-started-cn/tutorial/using-bind-mounts/</loc>
+         <loc>https://xmcy0011.github.io/getting-started-cn/tutorial/using-bind-mounts/</loc>
          <lastmod>2022-02-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/xmcy0011/getting-started-cn/tutorial/using-docker-compose/</loc>
+         <loc>https://xmcy0011.github.io/getting-started-cn/tutorial/using-docker-compose/</loc>
          <lastmod>2022-02-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://github.com/xmcy0011/getting-started-cn/tutorial/what-next/</loc>
+         <loc>https://xmcy0011.github.io/getting-started-cn/tutorial/what-next/</loc>
          <lastmod>2022-02-11</lastmod>
          <changefreq>daily</changefreq>
     </url>

@@ -63,7 +63,7 @@ ways that we can remove the old container. Feel free to choose the path that you
 我们有两个可以移除旧容器的方法，请随意选择您最喜欢的。
 
 <!-- ### Removing a container using the CLI -->
-### 使用CLI删除容器
+## 使用CLI删除容器
 
 <!-- 1. Get the ID of the container by using the `docker ps` command. -->
 1. 使用 `docker ps` 命令获取旧容器的ID。
@@ -107,7 +107,7 @@ much easier than having to look up the container ID and remove it. -->
 
 
 <!-- ### Starting our updated app container -->
-### 启动更新的应用程序容器
+## 启动更新的应用程序容器
 
 1. 现在，就可以成功启动我们更新过的容器了。
 

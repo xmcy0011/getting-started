@@ -91,6 +91,6 @@ have done. So, ask first and we'll gladly hear your thoughts! -->
 - 公众号：Go和分布式IM
 - 最后更新日期：2022-02-11
 
-如果感觉译者翻译的还可以，就关注一下公众号吧，目前已有69人关注，您的支持是我最大的动力！
+如果感觉译者翻译的还可以，就关注一下公众号吧，目前已有69个粉丝，您的支持就是我最大的动力！
 
 ![QRCode](qrcode.png)

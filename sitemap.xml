@@ -2,57 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://xmcy0011.github.io/getting-started-cn/</loc>
-         <lastmod>2022-02-11</lastmod>
+         <lastmod>2022-02-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://xmcy0011.github.io/getting-started-cn/tutorial/</loc>
-         <lastmod>2022-02-11</lastmod>
+         <lastmod>2022-02-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://xmcy0011.github.io/getting-started-cn/tutorial/image-building-best-practices/</loc>
-         <lastmod>2022-02-11</lastmod>
+         <lastmod>2022-02-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://xmcy0011.github.io/getting-started-cn/tutorial/multi-container-apps/</loc>
-         <lastmod>2022-02-11</lastmod>
+         <lastmod>2022-02-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://xmcy0011.github.io/getting-started-cn/tutorial/our-application/</loc>
-         <lastmod>2022-02-11</lastmod>
+         <lastmod>2022-02-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://xmcy0011.github.io/getting-started-cn/tutorial/persisting-our-data/</loc>
-         <lastmod>2022-02-11</lastmod>
+         <lastmod>2022-02-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://xmcy0011.github.io/getting-started-cn/tutorial/sharing-our-app/</loc>
-         <lastmod>2022-02-11</lastmod>
+         <lastmod>2022-02-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://xmcy0011.github.io/getting-started-cn/tutorial/updating-our-app/</loc>
-         <lastmod>2022-02-11</lastmod>
+         <lastmod>2022-02-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://xmcy0011.github.io/getting-started-cn/tutorial/using-bind-mounts/</loc>
-         <lastmod>2022-02-11</lastmod>
+         <lastmod>2022-02-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://xmcy0011.github.io/getting-started-cn/tutorial/using-docker-compose/</loc>
-         <lastmod>2022-02-11</lastmod>
+         <lastmod>2022-02-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://xmcy0011.github.io/getting-started-cn/tutorial/what-next/</loc>
-         <lastmod>2022-02-11</lastmod>
+         <lastmod>2022-02-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

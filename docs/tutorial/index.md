@@ -9,7 +9,7 @@ next_page: app.md
 此页面包含有关如何开始使用 Docker 的分步说明。在本教程中，您将学习如何：  
 
 - 构建并运行镜像作为容器  
-- 使用 Docker Hub 共享图像  
+- 使用 Docker Hub 共享镜像  
 - 使用带有数据库的多个容器部署 Docker 应用程序  
 - 使用 Docker Compose 运行应用程序  
 

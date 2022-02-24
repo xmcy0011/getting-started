@@ -53,7 +53,7 @@ an example command that you will need to run to push to this repo. -->
     ```
 
 <!-- ## Running our Image on a New Instance -->
-## 在新实例上运行我们的图像
+## 在新实例上运行我们的镜像
 
 <!-- Now that our image has been built and pushed into a registry, let's try running our app on a brand
 new instance that has never seen this container image! To do this, we will use Play with Docker. -->
